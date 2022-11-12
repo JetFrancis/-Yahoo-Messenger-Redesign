@@ -7,11 +7,10 @@
 
 body{
 position: relative;
-width: 1350px;
+width: 1440px;
 height: 1024px;
 
-
-background: linear-gradient(90deg, #9400D3 0%, #4B0082 100%);
+background: linear-gradient(90deg, #9400D3 0%, #8D00CB 24.48%, #4B0082 100%);
 border: 1px solid #000000;
 }
 
