@@ -18,29 +18,29 @@
       <header>
         <img src="logo/logo.png">
         <ul class="menu">
-          <li><a href="#">messenger</a></li>
-          <li><a href="#">help</a></li>
+          <li><a class="typography cl-white" href="#">messenger</a></li>
+          <li><a class="typography cl-white" href="#">help</a></li>
         </ul>
       </header>
 
-      <form>
+      <form class="bg-design">
       	<iconify-icon class="yahoo-icon" icon="ps:yahoo-messenger" style="color: #6a00a4;" width="94" height="90"></iconify-icon>
         <div class="input-box">
-          <input type="text" name="yahoo id" placeholder="Yahoo ID" required/>
+          <label><input class="grey-container" type="text" name="yahoo id" placeholder="Yahoo ID" required/></label>
         </div>
 
         <div class="input-box">
-          <input type="password" name="password" placeholder="Password" required/>
+          <label><input class="grey-container" type="password" name="password" placeholder="Password" required/></label>
         </div>
 
-        <div class="fieldset">
-          <input type="checkbox" checked/> Remember my ID & password <br>
-          <input type="checkbox"/> Sign in automatically <br>
-          <input type="checkbox" /> Sign in as invisible to everyone <br>
+        <div class="fieldset color-dark">
+          <label><input type="checkbox" checked/></label> Remember my ID & password <br>
+          <label><input type="checkbox"/></label> Sign in automatically <br>
+          <label><input type="checkbox"/></label> Sign in as invisible to everyone <br>
         </div>
 
-        <label for="language">Language:</label> <br>
-        	<select name="language" id="select-box">
+        <label class="select-lang lang-color cl-dark"for="language">Language:</label> <br>
+        	<select name="language" id="select-box" class="grey-container">
           		<option value="English">English</option>
           		<option value="Chinese">Chinese</option>
           		<option value="Spanish">Spanish</option>
@@ -48,13 +48,13 @@
           		<option value="Others">Others</option>
         	</select>
 
-        <div class="button">Sign in</div>
+        <div class="button button--content-design cl-white bg-indigo">Sign in</div>
 
         
 	</form>
         <div class="links">
-          <a href="#">Forgot your password?</a>
-          <a href="#">Get a new Yahoo ID</a>
+          <a class="cl-dark" href="#">Forgot your password?</a>
+          <a class="cl-dark" href="#">Get a new Yahoo ID</a>
         </div>
       
     </main>
