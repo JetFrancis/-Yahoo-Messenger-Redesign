@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Yahoo! Messenger</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Yahoo! Messenger</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<section>
-			<img src="https://cdn2.downdetector.com/static/uploads/c/300/f6a6f/yahoo-messenger-vector-logo.png">
-			<iconify-icon icon="mingcute:minimize-fill" style="color: #6a00a4;" width="20"></iconify-icon>
-			<iconify-icon icon="ic:baseline-web-asset" style="color: #6a00a4;" width="20"></iconify-icon>
-			<iconify-icon icon="eva:close-outline" style="color: #6a00a4;" width="20"></iconify-icon>
+	<main>
+      <header>
+        <img src="logo/logo.png">
+        <ul class="menu">
+          <li><a href="#">messenger</a></li>
+          <li><a href="#">help</a></li>
+        </ul>
+      </header>
 
-			<ul>
-          		<li class="messenger"><a href="#">messenger</a></li>
-          		<li class="help"><a href="#">help</a></li>
-        	</ul>
+      <form>
+      	<iconify-icon class="yahoo-icon" icon="ps:yahoo-messenger" style="color: #6a00a4;" width="94" height="90"></iconify-icon>
+        <div class="input-box">
+          <input type="text" name="yahoo id" placeholder="Yahoo ID" required/>
+        </div>
 
+        <div class="input-box">
+          <input type="password" name="password" placeholder="Password" required/>
+        </div>
 
-	</section>
+        <div class="fieldset">
+          <input type="checkbox" checked/> Remember my ID & password <br>
+          <input type="checkbox"/> Sign in automatically <br>
+          <input type="checkbox" /> Sign in as invisible to everyone <br>
+        </div>
 
-		<div>
-			<iconify-icon icon="ps:yahoo-messenger" style="color: #6a00a4;" width="137.82" height="135.85"></iconify-icon>
-			<form>
-				<input id="id" type="text" placeholder="Yahoo ID" required>
-				<input id="password" type="text" placeholder="Password" required>
-				<div>
-					<label><input type="checkbox" checked>Remember my id and password</label>
-					<label><input type="checkbox" >Sign in automatically</label>
-					<label><input type="checkbox" >Sign in as invisible to everyone</label>
-				</div>
+        <label for="language">Language:</label> <br>
+        	<select name="language" id="select-box">
+          		<option value="English">English</option>
+          		<option value="Chinese">Chinese</option>
+          		<option value="Spanish">Spanish</option>
+          		<option value="Arabic">Arabic</option>
+          		<option value="Others">Others</option>
+        	</select>
 
+        <div class="button">Sign in</div>
 
-       			<label for="language">Language:</label> <br />
-        			<select name="language" id="select-box">
-          			<option value="English">English (American)</option>
-          			<option value="Spanish">Tagalog</option>
-         			<option value="French">Spanish</option>
-          			<option value="Chinese">French</option>
-          			</select>
-
-				<div class="button">Submit</div>
-			</form>
-			<section>
-        		<a href="https://www.messenger.com/" target="_blank">Got a new Yahoo ID?</a>
-        		<a href="https://www.messenger.com/" target="_blank">Forgot your password?</a>
-      		</section>
-		</div>
-	</div>
+        
+	</form>
+        <div class="links">
+          <a href="#">Forgot your password?</a>
+          <a href="#">Get a new Yahoo ID</a>
+        </div>
+      
+    </main>
 </body>
 </html>
